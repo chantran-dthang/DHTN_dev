@@ -1,8 +1,11 @@
 function CalRetangle(){
-    var a=prompt("Input retangle length: ");
-    var b=prompt("Input retangle width :");
-    var P=(a+b)*2;
-    var S=a*b;
-    console.log("Primeter is: "+P);
-    console.log("Square is: "+S);
+    var length=Number(prompt("Input retangle length: "));
+    var width=Number(prompt("Input retangle width :"));
+    var S=length*width;
+    var P= ( length + width)*2;
+    
+    console.log("Length is: "+length);
+    console.log("Width is: "+width);
+    console.log("Primeter is: " +P);
+    console.log("Square is: " + S);
 }
