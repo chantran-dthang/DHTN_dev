@@ -9,6 +9,7 @@ function quadratic(a, b, c)
         }
         else 
         {
+            console.log(-c/b);
             return [-c/b];
         }
     }
@@ -23,11 +24,17 @@ function quadratic(a, b, c)
         {
             if(delta==0 )
             {
-                return [-b/(2*a)];
+                console.log(-b/(2*a));
+                return -b/(2*a);
             }
             else 
             {
-                return [-b-Math.sqrt(delta)/(2*a), -b+Math.sqrt(delta)/(2*a)];
+                var roots;
+                roots=[(-b-Math.sqrt(delta))/(2*a), (-b+Math.sqrt(delta))/(2*a)];
+                console.log(roots);
+                return roots;
+                //console.log(-b-Math.sqrt(delta)/(2*a), -b+Math.sqrt(delta)/(2*a));
+                //return [-b-Math.sqrt(delta)/(2*a), -b+Math.sqrt(delta)/(2*a)];
             }
         }
     }
