@@ -14,7 +14,7 @@ function quadratic(a, b, c)
     }
     else 
     {
-        var deltaV = b*b-4*a*c;
+        var delta = b*b-4*a*c;
         if(delta<0)
         {
            return [];
