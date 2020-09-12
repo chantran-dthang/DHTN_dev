@@ -7,5 +7,5 @@ function CalRetangle(){
     console.log("Length is: "+length);
     console.log("Width is: "+width);
     console.log("Primeter is: " +P);
-    console.log("Square is: " + S);
+    console.log("Area is: " + S);
 }
