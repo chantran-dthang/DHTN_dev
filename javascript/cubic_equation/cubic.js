@@ -6,6 +6,7 @@ function cubic(a, b, c, d)
     }
     else
     {
+
         var A=b/a, B=c/a, C=d/a; // put the equation in form of x^3 + ax^2 + bx + c=0
         var p=B-A*A/3, q=C+(2*Math.pow(A, 3)-9*A*B)/27; //put the equation form of t^3 + pt +q =0
         var roots;
@@ -24,11 +25,13 @@ function cubic(a, b, c, d)
             var delta=Math.pow(q, 2)/4 + Math.pow(p, 3)/27;
             if (delta==0) // two roots
             {      
+
                 roots = [-2*cuberoot(q/2)-A/3, cuberoot(q/2)-A/3];
             } 
             else if (delta > 0) // one root
             {            
                 roots = [-1*cuberoot(q/2 + Math.sqrt(delta))-cuberoot(q/2 - Math.sqrt(delta))-A/3];
+
             }
             else //three roots includes complex root(s)
             {                        
